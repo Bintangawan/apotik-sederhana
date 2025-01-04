@@ -3,8 +3,8 @@ session_start();
 require 'koneksi.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $loginInput = $_POST['username_email'] ?? ''; // Bisa berupa email atau username
-    $password = $_POST['password'] ?? '';
+    $loginInput = filter_var($_POST['username_email'],FILTER_SANITIZE_FULL_SPECIAL_CHARS) ?? ''; // Bisa berupa email atau username
+    $password = filter_var($_POST['password'],FILTER_SANITIZE_FULL_SPECIAL_CHARS) ?? '';
     $errors = [];
 
     // Simpan input lama

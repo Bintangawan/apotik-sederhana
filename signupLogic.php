@@ -3,10 +3,10 @@ session_start(); // Tambahkan session
 require 'koneksi.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $username = $_POST['username'] ?? '';
-    $email = $_POST['email'] ?? '';
-    $password = $_POST['createpassword'] ?? '';
-    $confirm_password = $_POST['confirmpassword'] ?? '';
+    $username = filter_var($_POST['username'],FILTER_SANITIZE_FULL_SPECIAL_CHARS) ?? '';
+    $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL) ?? '';
+    $password = filter_var($_POST['createpassword'], FILTER_SANITIZE_FULL_SPECIAL_CHARS) ?? ''; 
+    $confirm_password = filter_var($_POST['confirmpassword'], FILTER_SANITIZE_FULL_SPECIAL_CHARS) ?? '';
     $terms = isset($_POST['terms']) ? 1 : 0;
 
     $errors = [];
