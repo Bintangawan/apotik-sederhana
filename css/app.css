@@ -1,0 +1,134 @@
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f4f4f9;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Navigation Bar */
+.navtop {
+  background-color: #1e90ff;
+  height: 70px;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navtop div {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.navtop div h1 {
+  font-size: 26px;
+  color: #ffffff;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 0;
+  margin: 0;
+  flex: 1;
+}
+
+.navtop div a {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  border-radius: 20px;
+  transition: background 0.3s ease;
+}
+
+.navtop div a i {
+  /* margin-right: 8px; */
+  padding: 2px 8px 0 0;
+}
+
+.navtop div a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Content Section */
+.content {
+  max-width: 1200px;
+  margin: 40px auto;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333333;
+  border-bottom: 2px solid #1e90ff;
+  padding-bottom: 10px;
+}
+
+.content p {
+  color: #555555;
+  line-height: 1.8;
+  margin: 15px 0;
+}
+
+/* Main Section */
+main {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+main h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #1e90ff;
+}
+
+main p {
+  margin-bottom: 20px;
+  color: #666666;
+}
+
+main ul {
+  list-style: none;
+  padding: 0;
+}
+
+main ul li {
+  margin-bottom: 15px;
+}
+
+main ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #1e90ff;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  transition: color 0.3s ease;
+}
+
+main ul li a i {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+main ul li a:hover {
+  color: #ff6347;
+}

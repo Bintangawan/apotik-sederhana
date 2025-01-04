@@ -1,0 +1,44 @@
+#wrapper {
+    width: 960px;
+    margin: auto;
+    border: #F00 1px solid;
+}
+
+header {
+    height: 120px;
+    width: 960px;
+    float: left;
+}
+
+nav {
+    height: 40px;
+    width: 960px;
+    float: left;
+    background: #333;
+}
+
+
+#wrapper article {
+    width: 620px;
+    float: left;
+    padding: 10px;
+    background: #ccc;
+}
+
+#wrapper aside {
+    width: 300px;
+    float: left;
+    padding: 10px;
+}
+
+footer {
+    width: 960px;
+    float: left;
+    background: #cdd;
+}
+
+footer #kolom {
+    width: 300px;
+    padding: 10px;
+    float: left;
+}

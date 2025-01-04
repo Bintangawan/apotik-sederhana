@@ -1,0 +1,165 @@
+/* Membuat padding dan border dihitung ke dalam lebar elemen */
+* {
+    box-sizing: border-box;
+}
+
+#wrapper {
+    width: 960px;
+    margin: auto;
+    border: #F00 1px solid;
+    overflow: hidden; /* Menyelesaikan masalah float */
+}
+
+header {
+    height: 120px;
+    width: 100%; /* Sesuaikan dengan lebar wrapper */
+    float: left;
+}
+
+nav {
+    height: 40px;
+    width: 100%; /* Sesuaikan dengan lebar wrapper */
+    float: left;
+    background: #DFDFDF;
+    border: #AAAAAA 1px solid;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow: auto;
+}
+
+nav ul li {
+    list-style: none;
+    float: left;
+    padding: 5px 10px;
+    margin: 0;
+    border-right: #AAAAAA 1px solid;
+    position: relative; /* Tambahkan relative positioning untuk submenu */
+}
+
+nav ul li .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 120px; /* Sesuaikan lebar submenu */
+    background: #DFDFDF;
+    border: #AAAAAA 1px solid;
+}
+
+nav ul li:hover .submenu {
+    display: block;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+#wrapper article {
+    width: 620px;
+    float: left;
+    padding: 10px;
+}
+
+#wrapper article #single {
+    margin: 5px;
+    border: #DFDFDF 1px solid;
+    padding: 5px;
+    font-size: 13px;
+    float: left;
+    width: 100%; /* Pastikan elemen ini menggunakan lebar penuh */
+}
+
+#wrapper article #single #t-images {
+    width: 150px;
+    height: 150px;
+    float: left;
+    margin-right: 10px;
+    background-size: cover; /* Gambar sesuai ukuran */
+}
+
+#wrapper article #single h2 {
+    font-family: Tahoma;
+    font-size: 18px;
+    background: #EEEEEE;
+    padding: 5px;
+    margin: 0;
+}
+
+#wrapper article #single #more a {
+    float: right;
+    background: #CF6;
+    border: #FF9933 1px solid;
+    padding: 2px 10px;
+    text-decoration: none;
+    color: #000000;
+    border-radius: 10px;
+}
+
+#wrapper article #single #more a:hover {
+    background: #BD6;
+    color: #093;
+    border: #CC6600 1px solid;
+}
+
+#wrapper aside {
+    width: 300px;
+    float: left;
+    padding: 10px;
+}
+
+#wrapper aside .widget {
+    list-style: none;
+}
+
+#wrapper aside .widget ul {
+    list-style: none;
+    margin-left: 0; /* Menghilangkan offset */
+}
+
+#wrapper aside .widget li a {
+    text-decoration: none;
+    color: #446500;
+}
+
+#wrapper aside .widget li a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    width: 100%;
+    float: left;
+    background: #333333;
+    color: #BBBBBB;
+    padding: 10px 0; /* Tambahkan padding untuk estetika */
+    clear: both;
+}
+
+footer #column {
+    width: 30%; /* Perbaiki lebar kolom agar tidak melewati batas */
+    float: left;
+    padding: 10px;
+    font-size: 14px;
+}
+
+footer #column h2 {
+    margin: 0;
+    margin-bottom: 10px;
+    font-family: Tahoma;
+    font-size: 18px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+footer #column a {
+    color: #0099CC;
+    text-decoration: none;
+}

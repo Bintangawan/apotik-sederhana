@@ -1,0 +1,45 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+   
+    margin: 0;
+    padding: 0;
+  }
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    font-size: 18px;
+}
+
+nav {
+    height: 30px;
+    background: #344;
+    font-size: 20px;
+    padding: 10px;
+    color: #F00;
+}
+
+nav a {
+    color: white;
+}
+
+h2 {
+    color: red;
+    border: display;
+    background: #ccc;
+    height: 30px;
+    padding: 10px;
+}
+
+footer {
+    background: #344;
+    height: 50px;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    color: white;
+    line-height: 50px; /* Set agar teks terpusat secara vertikal */
+}
+
