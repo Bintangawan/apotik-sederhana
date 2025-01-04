@@ -13,6 +13,6 @@ Ini tuh berisi praktikum modul 1-8, juga tambahan sebuah form login dan registra
 1. **Clone repository**:
 
    ```bash
-   git clone https://github.com/username/apotik-sederhana.git
+   git clone https://github.com/Bintangawan/apotik-sederhana.git
    cd apotik-sederhana
    code .
